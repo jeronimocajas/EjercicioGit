@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#11998e,#38ef7d);min-height:100vh;display:flex;align-items:center;justify-content:center}
+.box{background:white;padding:40px;border-radius:12px;width:480px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+h1{color:#11998e;text-align:center;margin-bottom:6px}
+.sub{color:#888;text-align:center;font-size:14px;margin-bottom:24px}
+.fg{margin-bottom:16px}
+label{display:block;color:#555;font-size:13px;font-weight:600;margin-bottom:5px}
+input,select{width:100%;padding:11px 14px;border:2px solid #e0e0e0;border-radius:8px;font-size:14px;outline:none}
+input:focus,select:focus{border-color:#11998e}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{width:100%;padding:13px;background:linear-gradient(135deg,#11998e,#38ef7d);color:white;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>EduApp</h1>
+<p class="sub">Crear nueva cuenta</p>
+<form>
+<div class="row">
+<div class="fg"><label>Nombre</label><input type="text" placeholder="Juan" required></div>
+<div class="fg"><label>Apellido</label><input type="text" placeholder="Perez" required></div>
+</div>
+<div class="fg"><label>Correo Institucional</label><input type="email" placeholder="correo@cecar.edu.co" required></div>
+<div class="fg"><label>Programa Academico</label>
+<select><option>Seleccione...</option><option>Ingenieria de Sistemas</option><option>Ingenieria Civil</option><option>Arquitectura</option></select>
+</div>
+<div class="fg"><label>Contrasena</label><input type="password" required></div>
+<button type="submit" class="btn">Crear Cuenta</button>
+</form>
+</div>
+</body>
+</html>
